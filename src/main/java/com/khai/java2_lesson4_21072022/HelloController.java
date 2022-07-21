@@ -5,8 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-
-
 public class HelloController {
     @FXML
     private TextField messTxt;
@@ -14,10 +12,9 @@ public class HelloController {
     private TextArea result;
     @FXML
     private ListView<?> users;
-
     @FXML
     void send(ActionEvent event) {
-        result.insertText(0, messTxt.getText() + "\n");
+        result.insertText(0, messTxt.getText() +  "\n");
         messTxt.clear();
     }
 
