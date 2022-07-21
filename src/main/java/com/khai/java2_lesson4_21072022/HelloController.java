@@ -5,25 +5,16 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-
 public class HelloController {
-        @FXML
-        private TextField messTxt;
-        @FXML
-        private TextArea result;
-        @FXML
-        private ListView<?> users;
-
-
-
-
-
-
-        @FXML
+    @FXML
+    private TextField messTxt;
+    @FXML
+    private TextArea result;
+    @FXML
+    private ListView<?> users;
+    @FXML
     void send(ActionEvent event) {
-        result.insertText(0, messTxt.getText() + "\n");
+        result.insertText(0, messTxt.getText() +  "\n");
         messTxt.clear();
     }
 
