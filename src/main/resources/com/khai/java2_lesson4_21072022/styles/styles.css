@@ -1,0 +1,5 @@
+#resultLabel {
+    -fx-background-color: rgba(237, 113, 13, 0.89);
+    -fx-text-fill: #2588c1;
+    -fx-alignment: center;
+}
